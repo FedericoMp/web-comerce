@@ -46,15 +46,25 @@ async function main() {
     const productGrid = document.getElementById('product-grid');
     loadShoes(DATA, productGrid, null);
 
+    // Mobile ID filter
     document.getElementById('shoesSearch').addEventListener('click', () => {
         loadShoes(DATA, productGrid, ["category", "shoes"]);
     });
-
     document.getElementById('thirtySixSearch').addEventListener('click', () => {
         loadShoes(DATA, productGrid, ["size", 36]);
     });
-        
     document.getElementById('yellowSearch').addEventListener('click', () => {
+        loadShoes(DATA, productGrid, ["colour", "amarillo"]);
+    });
+
+    // Desktop ID filter
+    document.getElementById('shoesSearchD').addEventListener('click', () => {
+        loadShoes(DATA, productGrid, ["category", "shoes"]);
+    });
+    document.getElementById('thirtySixSearchD').addEventListener('click', () => {
+        loadShoes(DATA, productGrid, ["size", 36]);
+    });
+    document.getElementById('yellowSearchD').addEventListener('click', () => {
         loadShoes(DATA, productGrid, ["colour", "amarillo"]);
     });
 }
