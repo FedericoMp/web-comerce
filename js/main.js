@@ -31,7 +31,7 @@ function loadShoes(items, container, filter) {
         container.innerHTML = `<div class="col-sm-12">
                                 <div class="mb-4">
                                     <div class="card-body">
-                                        <h3 class="card-title text-cemter">No se encuentra el producto...</h3>
+                                        <h3 class="card-title text-center">No se encuentra el producto...</h3>
                                     </div>
                                     <img src="../assets/empty.png" class="card-img-top" alt="No se encontro el producto" width="100%">
                                 </div>
