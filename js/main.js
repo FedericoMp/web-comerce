@@ -28,14 +28,14 @@ function loadShoes(items, container, filter) {
         }
     }
     if (shoes.length === 0) {
-        container.innerHTML = `<div class="col-sm-12">
-                                <div class="mb-4">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-center">No se encuentra el producto...</h3>
+        container.innerHTML = `<div class="col-sm-9">
+                                    <div class="card border-danger mb-4">
+                                        <div class="card-body text-danger">
+                                            <h5 class="card-title">Producto no encontrado</h5>
+                                            <p class="card-text">Por el momento no contamos con stock del producto solicitado.<br>Intente con otros filtros. Gracias.</p>
+                                        </div>
                                     </div>
-                                    <img src="../assets/empty.png" class="card-img-top" alt="No se encontro el producto" width="100%">
-                                </div>
-                            </div>`;
+                                </div>`;
     } else {
         shoes.forEach(el => {
             tag = `<div class="col-sm-6 col-md-4 col-lg-4">
