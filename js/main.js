@@ -1,11 +1,14 @@
-async function getShoes() {
-    return fetch('../data/data.json', {
-                method: 'GET',
-                mode: 'same-origin',
-                headers: { 'Content-Type': 'application/json' }
-            })
-            .then(res => res.json());
-}
+import { DATA } from './data.js';
+
+// For local test
+// async function getShoes() {
+//     return fetch('../data/data.json', {
+//                 method: 'GET',
+//                 mode: 'same-origin',
+//                 headers: { 'Content-Type': 'application/json' }
+//             })
+//             .then(res => res.json());
+// }
 
 function loadShoes(items, container, filter) {
     let { shoes } = items;
@@ -39,9 +42,9 @@ function loadShoes(items, container, filter) {
 }
 
 async function main() {
-    const SHOES = await getShoes();
+    // const SHOES = await getShoes();
     const productGrid = document.getElementById('product-grid');
-    loadShoes(SHOES, productGrid, null);
+    loadShoes(DATA, productGrid, null);
 
     document.getElementById('shoesSearch').addEventListener('click', () => {
         loadShoes(SHOES, productGrid, ["category", "shoes"]);
