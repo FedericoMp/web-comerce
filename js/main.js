@@ -47,15 +47,15 @@ async function main() {
     loadShoes(DATA, productGrid, null);
 
     document.getElementById('shoesSearch').addEventListener('click', () => {
-        loadShoes(SHOES, productGrid, ["category", "shoes"]);
+        loadShoes(DATA, productGrid, ["category", "shoes"]);
     });
 
     document.getElementById('thirtySixSearch').addEventListener('click', () => {
-        loadShoes(SHOES, productGrid, ["size", 36]);
+        loadShoes(DATA, productGrid, ["size", 36]);
     });
         
     document.getElementById('yellowSearch').addEventListener('click', () => {
-        loadShoes(SHOES, productGrid, ["colour", "amarillo"]);
+        loadShoes(DATA, productGrid, ["colour", "amarillo"]);
     });
 }
 
