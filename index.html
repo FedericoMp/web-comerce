@@ -102,118 +102,49 @@
                 <div class="accordion" id="sub-filter-mobile">
                   <!-- Category -->
                   <div class="card">
-                    <div class="card-header" id="m-category">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed text-dark d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseCategoryM" aria-expanded="false" aria-controls="collapseCategoryM">
-                          <b>Categoría</b>
-                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                          </svg>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseCategoryM" class="collapse" aria-labelledby="m-category" data-parent="#sub-filter-mobile">
-                      <div class="card-body p-1">
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item pl-4">
-                              <a href="#" class="text-dark" id="shoesSearch">Zapatillas</a>
-                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="green" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                                <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
-                              </svg>
-                            </li>
-                            <li class="list-group-item pl-4">
-                              <a href="#" class="text-dark">Zapatos</a>
-                            </li>
-                            <li class="list-group-item pl-4">
-                              <a href="#" class="text-dark">Botas</a>
-                            </li>
-                            <li class="list-group-item pl-4">
-                              <a href="#" class="text-dark">Sandalias</a>
-                            </li>
-                            <li class="list-group-item pl-4">
-                              <a href="#" class="text-dark">Pantuflas</a>
-                            </li>
-                          </ul>
+                    <div class="card-header">
+                      <div class="form-group">
+                        <label for="typeSelectM">Por Color</label>
+                        <select class="form-control" id="typeSelectM">
+                          <option>Seleccionar...</option>
+                          <option>Zapatos</option>
+                          <option>Botas</option>
+                          <option>Sandalias</option>
+                          <option>Pantuflas</option>
+                        </select>
                       </div>
                     </div>
                   </div>
                   <!-- Size -->
                   <div class="card">
-                    <div class="card-header" id="m-size">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed text-dark d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseSizeM" aria-expanded="false" aria-controls="collapseSizeM">
-                          <b>Talle</b>
-                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                          </svg>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseSizeM" class="collapse" aria-labelledby="m-size" data-parent="#sub-filter-mobile">
-                      <div class="card-body p-1">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark" id="thirtySixSearch">36</a>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="green" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                              <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
-                            </svg>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">38</a>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">40</a>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">42</a>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">44</a>
-                          </li>
-                        </ul>
+                    <div class="card-header">
+                      <div class="form-group">
+                        <label for="sizeSelectM">Por Color</label>
+                        <select class="form-control" id="sizeSelectM">
+                          <option>Seleccionar...</option>
+                          <option>38</option>
+                          <option>40</option>
+                          <option>42</option>
+                          <option>44</option>
+                        </select>
                       </div>
                     </div>
                   </div>
                   <!-- Color -->
                   <div class="card">
-                    <div class="card-header" id="m-color">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed text-dark d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseColorM" aria-expanded="false" aria-controls="collapseColorM">
-                              <b>Color</b>
-                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                              </svg>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseColorM" class="collapse" aria-labelledby="m-color" data-parent="#sub-filter-mobile">
-                      <div class="card-body p-1">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark" id="yellowSearch">Amarillo</a>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="green" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                              <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
-                            </svg>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">Negro</a>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">Verde</a>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">Azul</a>
-                          </li>
-                          <li class="list-group-item pl-4">
-                            <a href="#" class="text-dark">Blanco</a>
-                          </li>
-                        </ul>
+                    <div class="card-header">
+                      <div class="form-group">
+                        <label for="colourSelectM">Por Color</label>
+                        <select class="form-control" id="colourSelectM">
+                          <option>Seleccionar...</option>
+                          <option>Negro</option>
+                          <option>Verde</option>
+                          <option>Azul</option>
+                          <option>Blanco</option>
+                        </select>
                       </div>
                     </div>
-                  </div>
+                   </div>
                 </div>
               </div>
             </div>
@@ -231,114 +162,45 @@
               <!-- Category -->
               <div class="card">
                 <div class="card-header" id="category">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed text-dark d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
-                      <b>Categoría</b>
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                      </svg>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseCategory" class="collapse" aria-labelledby="category" data-parent="#filter">
-                  <div class="card-body p-1">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item pl-4">
-                          <a href="#" class="text-dark" id="shoesSearchD">Zapatillas</a>
-                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="green" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                            <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
-                          </svg>
-                        </li>
-                        <li class="list-group-item pl-4">
-                          <a href="#" class="text-dark">Zapatos</a>
-                        </li>
-                        <li class="list-group-item pl-4">
-                          <a href="#" class="text-dark">Botas</a>
-                        </li>
-                        <li class="list-group-item pl-4">
-                          <a href="#" class="text-dark">Sandalias</a>
-                        </li>
-                        <li class="list-group-item pl-4">
-                          <a href="#" class="text-dark">Pantuflas</a>
-                        </li>
-                      </ul>
+                  <div class="form-group">
+                    <label for="typeSelect">Por Color</label>
+                    <select class="form-control" id="typeSelect">
+                      <option>Seleccionar...</option>
+                      <option>Zapatos</option>
+                      <option>Botas</option>
+                      <option>Sandalias</option>
+                      <option>Pantuflas</option>
+                    </select>
                   </div>
                 </div>
               </div>
               <!-- Size -->
               <div class="card">
                 <div class="card-header" id="size">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed text-dark d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
-                      <b>Talle</b>
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                      </svg>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseSize" class="collapse show" aria-labelledby="size" data-parent="#filter">
-                  <div class="card-body p-1">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark" id="thirtySixSearchD">36</a>
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="green" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                          <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
-                        </svg>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">38</a>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">40</a>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">42</a>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">44</a>
-                      </li>
-                    </ul>
+                  <div class="form-group">
+                    <label for="sizeSelect">Por Color</label>
+                    <select class="form-control" id="sizeSelect">
+                      <option>Seleccionar...</option>
+                      <option>38</option>
+                      <option>40</option>
+                      <option>42</option>
+                      <option>44</option>
+                    </select>
                   </div>
                 </div>
               </div>
               <!-- Color -->
               <div class="card">
                 <div class="card-header" id="color">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed text-dark d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
-                          <b>Color</b>
-                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                          </svg>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseColor" class="collapse" aria-labelledby="color" data-parent="#filter">
-                  <div class="card-body p-1">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark" id="yellowSearchD">Amarillo</a>
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="green" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                          <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
-                        </svg>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">Negro</a>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">Verde</a>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">Azul</a>
-                      </li>
-                      <li class="list-group-item pl-4">
-                        <a href="#" class="text-dark">Blanco</a>
-                      </li>
-                    </ul>
+                  <div class="form-group">
+                    <label for="colourSelect">Por Color</label>
+                    <select class="form-control" id="colourSelect">
+                      <option>Seleccionar...</option>
+                      <option>Negro</option>
+                      <option>Verde</option>
+                      <option>Azul</option>
+                      <option>Blanco</option>
+                    </select>
                   </div>
                 </div>
               </div>

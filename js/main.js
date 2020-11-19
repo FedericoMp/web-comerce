@@ -27,18 +27,29 @@ function loadShoes(items, container, filter) {
                 break;
         }
     }
-    shoes.forEach(el => {
-        tag = `<div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm shoe-container">
-                            <img src="${el.img}" class="card-img-top shoes-img" alt="${el.name}" width="100%">
-                            <div class="card-body">
-                            <h5 class="card-title">${el.name}</h5>
-                            <p class="card-text">$${el.price}</p>
+    if (shoes.length === 0) {
+        container.innerHTML = `<div class="col-sm-12">
+                                <div class="mb-4">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-cemter">No se encuentra el producto...</h3>
+                                    </div>
+                                    <img src="../assets/empty.png" class="card-img-top" alt="No se encontro el producto" width="100%">
+                                </div>
+                            </div>`;
+    } else {
+        shoes.forEach(el => {
+            tag = `<div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="card mb-4 shadow-sm shoe-container">
+                                <img src="${el.img}" class="card-img-top shoes-img" alt="${el.name}" width="100%">
+                                <div class="card-body">
+                                <h5 class="card-title">${el.name}</h5>
+                                <p class="card-text">$${el.price}</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>`;
-        container.innerHTML += tag;
-    });
+                        </div>`;
+            container.innerHTML += tag;
+        });
+    }
 }
 
 async function main() {
@@ -46,26 +57,54 @@ async function main() {
     const productGrid = document.getElementById('product-grid');
     loadShoes(DATA, productGrid, null);
 
-    // Mobile ID filter
-    document.getElementById('shoesSearch').addEventListener('click', () => {
-        loadShoes(DATA, productGrid, ["category", "shoes"]);
-    });
-    document.getElementById('thirtySixSearch').addEventListener('click', () => {
-        loadShoes(DATA, productGrid, ["size", 36]);
-    });
-    document.getElementById('yellowSearch').addEventListener('click', () => {
-        loadShoes(DATA, productGrid, ["colour", "amarillo"]);
+    // Desktop filter
+    const typeSelect = document.getElementById('typeSelect');
+    typeSelect.addEventListener('change', (e) => {
+        sizeSelect.selectedIndex = 0;
+        colourSelect.selectedIndex = 0;
+        let filter = e.target.value.toLowerCase();
+        loadShoes(DATA, productGrid, ["category", filter]);
     });
 
-    // Desktop ID filter
-    document.getElementById('shoesSearchD').addEventListener('click', () => {
-        loadShoes(DATA, productGrid, ["category", "shoes"]);
+    const sizeSelect = document.getElementById('sizeSelect');
+    sizeSelect.addEventListener('change', (e) => {
+        typeSelect.selectedIndex = 0;
+        colourSelect.selectedIndex = 0;
+        let filter = +e.target.value;
+        loadShoes(DATA, productGrid, ["size", filter]);
     });
-    document.getElementById('thirtySixSearchD').addEventListener('click', () => {
-        loadShoes(DATA, productGrid, ["size", 36]);
+
+    const colourSelect = document.getElementById('colourSelect');
+    colourSelect.addEventListener('change', (e) => {
+        typeSelect.selectedIndex = 0;
+        sizeSelect.selectedIndex = 0;
+        let filter = e.target.value.toLowerCase();
+        loadShoes(DATA, productGrid, ["colour", filter]);
     });
-    document.getElementById('yellowSearchD').addEventListener('click', () => {
-        loadShoes(DATA, productGrid, ["colour", "amarillo"]);
+
+    // Mobile filter
+    const typeSelectM = document.getElementById('typeSelectM');
+    typeSelectM.addEventListener('change', (e) => {
+        sizeSelectM.selectedIndex = 0;
+        colourSelectM.selectedIndex = 0;
+        let filter = e.target.value.toLowerCase();
+        loadShoes(DATA, productGrid, ["category", filter]);
+    });
+
+    const sizeSelectM = document.getElementById('sizeSelectM');
+    sizeSelectM.addEventListener('change', (e) => {
+        typeSelectM.selectedIndex = 0;
+        colourSelectM.selectedIndex = 0;
+        let filter = +e.target.value;
+        loadShoes(DATA, productGrid, ["size", filter]);
+    });
+
+    const colourSelectM = document.getElementById('colourSelectM');
+    colourSelectM.addEventListener('change', (e) => {
+        typeSelectM.selectedIndex = 0;
+        sizeSelectM.selectedIndex = 0;
+        let filter = e.target.value.toLowerCase();
+        loadShoes(DATA, productGrid, ["colour", filter]);
     });
 }
 

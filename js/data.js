@@ -7,7 +7,7 @@ export const DATA = {
             size: 40,
             price: 7210,
             colour: "negro",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "Outside Sport",
@@ -16,25 +16,25 @@ export const DATA = {
             size: 38,
             price: 5123,
             colour: "blanco",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "Cloud Adizero",
             img: "https://cdn.pixabay.com/photo/2017/07/30/15/49/adidas-2554690_960_720.jpg",
             brand: "Adidas",
-            size: 36,
+            size: 38,
             price: 6350,
             colour: "gris",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "Running WRs-X0",
             img: "https://cdn.pixabay.com/photo/2020/07/21/18/31/footwear-5427076_960_720.jpg",
             brand: "Puma",
-            size: 36,
+            size: 42,
             price: 12001,
             colour: "rosa",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "NEO",
@@ -43,7 +43,7 @@ export const DATA = {
             size: 40,
             price: 11891,
             colour: "blanco",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "FluidRide",
@@ -52,16 +52,16 @@ export const DATA = {
             size: 40,
             price: 2991,
             colour: "azul",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "Ride Sport",
             img: "https://cdn.pixabay.com/photo/2015/09/30/16/06/feet-965688_960_720.jpg",
             brand: "Athix",
-            size: 35,
+            size: 44,
             price: 3599,
             colour: "rosa",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "Vans-X0",
@@ -70,16 +70,16 @@ export const DATA = {
             size: 38,
             price: 12001,
             colour: "negro",
-            category: "shoes"
+            category: "zapatos"
         },
         {
             name: "Woodcutter",
             img: "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiking-1149891_960_720.jpg",
             brand: "Timberland",
-            size: 43,
+            size: 44,
             price: 8221,
             colour: "amarillo",
-            category: "boots"
+            category: "botas"
         }
     ]
 };
