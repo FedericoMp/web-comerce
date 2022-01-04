@@ -38,7 +38,7 @@ export const DATA = {
         },
         {
             name: "NEO",
-            img: "https://cdn.pixabay.com/photo/2016/01/19/18/02/skateboards-1150036_960_720.jpg",
+            img: "https://cdn.pixabay.com/photo/2016/11/23/17/17/adidas-1853899_960_720.jpg",
             brand: "Adidas",
             size: 40,
             price: 11891,
@@ -74,7 +74,7 @@ export const DATA = {
         },
         {
             name: "Woodcutter",
-            img: "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiking-1149891_960_720.jpg",
+            img: "https://cdn.pixabay.com/photo/2015/11/06/16/51/shoe-1029734_960_720.jpg",
             brand: "Timberland",
             size: 44,
             price: 8221,
